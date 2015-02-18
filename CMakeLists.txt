@@ -46,7 +46,7 @@ configure_file(snappy-stubs-public.h.in
     ${CMAKE_CURRENT_BINARY_DIR}/snappy-stubs-public.h
     @ONLY)
 
-add_library(snappy ${SRCS})
+add_library(snappy STATIC ${SRCS})
 
 ENABLE_TESTING()
 find_package(GTest)
